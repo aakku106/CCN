@@ -4,9 +4,9 @@ def fetchFolder():
       folderName = input("Select folder for versioning: ");
       ifFolderExist = os.path.isdir('../'+folderName);    
       if ifFolderExist :
-          shutil.copytree('../'+folderName,'throw')
+          shutil.copytree('../'+folderName,phx.returnThrow())
           print("Folder selected: ", folderName, "\n", "Files in the folder:");
-          fileName= os.listdir("throw");
+          fileName= os.listdir("../"+folderName);
           for i in fileName:
              print(i);
       else:
