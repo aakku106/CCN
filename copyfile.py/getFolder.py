@@ -1,4 +1,3 @@
-# importing required packages
 import shutil
 import os
 
