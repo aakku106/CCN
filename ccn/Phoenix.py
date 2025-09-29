@@ -11,7 +11,7 @@
 # returnThrow()
 
 
-throwVal = 'throw00'
+throwVal = 'throw'
 
 def returnThrow():
     global throwVal
@@ -20,3 +20,8 @@ def returnThrow():
     elif throwVal == 'throw11':
         throwVal = 'throw00'
     return throwVal
+
+val = 0;
+print(val);
+vall = throwVal,val;
+print(vall);
